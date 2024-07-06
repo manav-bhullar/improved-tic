@@ -5,27 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <div class="container">
 
         <div class="heading">
-            <h1>
-                tic. <br>
-                tac. <br>
-                toe.
-            </h1>
+            <div class="words">
+                <div class="tic">
+                    <h1>tic.</h1>
+                </div>
+                <div class="tac">
+                    <h1>tac.</h1>
+                </div>
+                <div class="toe">
+                    <h1>toe.</h1>
+                </div>
+            </div>
         </div>
 
 
         <div class="container-box">
 
-            <div class="stats">
-                
+            <div class="stats-box">
+
+                <div class="player-x">
+                    <h2>Player X</h2>
+
+                </div>
+
+                <div class="draw">
+                    <h2>Draw</h2>
+                </div>
+
+                <div class="player-o">
+                    <h2>Player O</h2>
+
+                </div>
+
             </div>
+
+            <div class="game-box">
+
+                <div class="row">
+                    <div class="box" id="box-1">x</div>
+                    <div class="box" id="box-2">x</div>
+                    <div class="box" id="box-3">x</div>
+                </div>
+
+                <div class="row">
+                    <div class="box" id="box-4">x</div>
+                    <div class="box" id="box-5">x</div>
+                    <div class="box" id="box-6">x</div>
+                </div>
+
+                <div class="row">
+                    <div class="box" id="box-7">x</div>
+                    <div class="box" id="box-8">x</div>
+                    <div class="box" id="box-9">x</div>
+                </div>
+            </div>
+
+            <div class="instructions">
+
+                <div class="new-game">
+                    <button>New Game</button>
+                </div>
+
+                <div class="turn">
+                    <h2>X turn</h2>
+                </div>
+
+                <div class="winner">
+                    <h2>Game over, Player X winner</h2>
+                </div>
+            </div>
+
+
+
         </div>
-    </div>
 </body>
+<script src="./script.js"></script>
 
 </html>
