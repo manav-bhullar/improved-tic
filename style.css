@@ -5,7 +5,7 @@ body {
     position: relative;
 
     background-color: #45115d;
-    padding: 0 15%;
+    padding: 0;
 
     z-index: 1;
     text-align: center;    
@@ -24,10 +24,11 @@ body {
     margin-bottom: 0;
 
 
+
     overflow: hidden; /* Hide content overflowing the clip-path */
 
     border: none;
-    border-radius: 5%;
+    border-radius: 50px;
     height: 100vh;
     position: relative;
 }
@@ -90,7 +91,8 @@ body {
     background-color: #2b0040;
     border: none;
     border-radius: 7%;
-    min-width:30%;
+    min-width: 300px;
+    max-width: 17%;         
     height: 70vh;
     padding: 5%;
 }
@@ -174,12 +176,34 @@ button{
     height: 100%;
     margin: 0;
     border-radius: 10px;
+    font-size: 15px;
+    font-weight: 900;
 }
 
-/* .turn{
-    display: none;
-} */
+.turn{
+    /* display: none; */
+    background-color: #47d1ff;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-/* .winner{
-    display: none;
-} */
+
+    h2{
+        margin: 0;
+        font-size: 20px;
+    }
+}
+
+.winner{
+    /* display: none; */
+    /* game-over-toast */
+    svg{
+        width:80%;
+    }
+
+}
