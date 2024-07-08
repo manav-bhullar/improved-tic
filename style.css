@@ -1,10 +1,22 @@
+:root{
+    --blue: #48D2FE;
+    --light_blue: #72CFF9;
+    --violet: #2B0040;
+    --light_violet: #43115B;
+    --light_yellow: #DCBF3F;
+    --yellow: #E2BE00;
+    --trans_white: #FFFFFF;
+    --white: #f4f6f5;
+
+
+}
 body {
     margin: 0;
     padding: 0;
 
     position: relative;
 
-    background-color: #45115d;
+    background-color: var(--violet);
     padding: 0;
 
     z-index: 1;
@@ -15,7 +27,7 @@ body {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background-color: rgb(104, 35, 136);
+    background-color: var(--light_violet);
 
     display: flex;
     flex-direction: column;
@@ -44,7 +56,7 @@ body {
 
     h1{
         margin: 0;
-        font-size: 150px;
+        font-size: 250px;
         font-weight: 900;
     }
 }
@@ -57,38 +69,38 @@ body {
 .tac,
 .tic{
     position: absolute;
-    left: -5px;
+    left: -10px;
 }
 
 .toe{
-    bottom: -20px;
+    bottom: -65px;
     z-index: 0;
     h1{
-        color: #f9d72c;
+        color: var(--light_yellow);
     
     }
 }
 
 .tac{
-    bottom: 65px;
+    bottom: 70px;
     z-index: 1;
     h1{
-        color: #47d1ff
+        color: var(--light_blue)
     }
 }
 
 .tic{
-    bottom: 150px;
+    bottom: 200px;
     z-index: 0;
     h1{
-        color: #f9d72c;
+        color: var(--light_yellow);
     }
 }
 
 .container-box{
     display: grid;
     grid-template-rows: 1fr 3fr 2fr;
-    background-color: #2b0040;
+    background-color: var(--violet);
     border: none;
     border-radius: 7%;
     min-width: 300px;
@@ -115,17 +127,17 @@ body {
     text-align: center;
 }
 .player-x{
-    background-color: #47d1ff;
+    background-color: var(--blue);
     color: #000000;
 }
 
 .player-o{
-    background-color: #f9d72c;
+    background-color:  var(--yellow);
     color: #000000;
 }
 
 .draw{
-    background-color: #bedcfa;
+    background-color: #BCDBF9;
     color: #000000;
 }
 
@@ -142,7 +154,7 @@ body {
 .game-box > .box{
     border: none;
     border-radius: 10%;
-    background-color: #44115c;
+    background-color: var(--light_violet);
     height: 80px;
     width: 80px;
     display: flex;
@@ -170,7 +182,7 @@ body {
 
 }
 button{
-    background-color: #f4f6f5;
+    background-color: var(--white);
     border: none;
     width: 100%;
     height: 100%;
@@ -182,7 +194,7 @@ button{
 
 .turn{
     /* display: none; */
-    background-color: #47d1ff;
+    background-color: var(--light_blue);
     width: 100%;
     border: none;
     border-radius: 10px;
